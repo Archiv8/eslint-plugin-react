@@ -4,7 +4,7 @@ _Exploring and Sharing Custom [Arch Linux](https://www.archlinux.org/) PKGBUILDs
 
 ---
 
-**_This repository contains unofficial packaging for an installation of [ESLint-plugin-React](https://github.com/yannickcr/eslint-plugin-react) on [Arch Linux](https://www.archlinux.org/).  It is not affiliated, authorized, endorsed by, or in other way connected with either Arch Linux or the ESLint project._**
+**_This repository contains unofficial packaging for an installation of [ESLint-plugin-React](https://github.com/yannickcr/eslint-plugin-react).  It is not affiliated, authorized, endorsed by, or in other way connected with either Arch Linux or the ESLint-plugin-React project._**
 
 ---
 
