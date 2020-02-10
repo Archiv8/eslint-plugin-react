@@ -1,5 +1,5 @@
-# Maintainer: Ross Clark <https://github.com/Archiv8/nodejs-lerna/issues>
-# Contributor: Ross Clark <https://github.com/Archiv8/nodejs-lerna/issues>
+# Maintainer: Ross Clark <archiv8@artisteducator.com>
+# Contributor: Ross Clark <archiv8@artisteducator.com>
 
 _relname="eslint-plugin-react"
 
@@ -72,10 +72,7 @@ jq '.|=with_entries(select(.key|test("_.+")|not))' "$pkgjson" > "$tmppackage"
 mv "$tmppackage" "$pkgjson"
 chmod 644 "$pkgjson"
 
-# echo $srcdir
-
 # Install license
-# install -Dm 644 "$srcdir/package/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 install -dm755 "${pkgdir}/usr/share/licenses/${pkgname}"
 ln -s ../../../lib/node_modules/eslint/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 
