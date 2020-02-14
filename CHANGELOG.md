@@ -18,7 +18,28 @@ All notable changes to the project are documented in this file using rules based
 | ------- | ---------- | ----------------------------------------------------- |
 |         |            |                                                       |
 
-## [1.0.0] - 2020-02-06
+## :shower: [1.1.0] - 2020-02-14
+
+### This release addresses
+
+- Tidy documentation by reducing amount of information in headers
+- Update any incorrect links in Documentation
+- Tidy and correct errors PKGBUILD
+
+### This release includes
+
+| Commit  | Date       | Title / Overview                                      |
+| ------- | ---------- | ----------------------------------------------------- |
+|      +2 | 2020-02-14 | :id: SEC(integ): Regenerate sums for changed files    |
+|      +1 | 2020-02-14 | :date: DOC(log): Update ready for 1.1.0 release       |
+| 2c897cf | 2020-02-14 | :school: TOOL(spell): Add latest spellings to repo    |
+| fa2a087 | 2020-02-14 | :id: SEC(integ): Regenerate sums for changed files    |
+| 0eeed07 | 2020-02-14 | :school: TOOL(spell): Add latest spellings to repo    |
+| 94a81f4 | 2020-02-14 | :shower: DOC(tidy): Tidy header text and fix links    |
+| 1ca143a | 2020-02-14 | :shower: PACK(scope): Correct links and tidy code     |
+| ae4bab4 | 2020-02-14 | :shower: DOC(tidy): Tidy info in document header text |
+
+## :tada: [1.0.0] - 2020-02-06
 
 ### This release addresses
 
@@ -28,7 +49,7 @@ All notable changes to the project are documented in this file using rules based
 
 | Commit  | Date       | Title / Overview                                      |
 | ------- | ---------- | ----------------------------------------------------- |
-|  latest | 2020-02-06 | :tada: INIT: Initial upload                           |
+| b3b26d3 | 2020-02-06 | :tada: INIT: Initial upload                           |
 
 ---
 
