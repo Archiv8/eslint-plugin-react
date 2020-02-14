@@ -80,6 +80,7 @@
 		"!248mBuilding",
 		"noextract",
 		"tgz",
-		"sha512sums"
+		"sha512sums",
+		"integ"
 	]
 }
