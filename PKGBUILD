@@ -12,7 +12,7 @@ pkgdesc="React specific linting rules for ESLint"
 arch=("any")
 url="https://eslint.org"
 license=("MIT")
-# groups
+# groups=()
 depends=("nodejs")
 optdepends=("nodejs-eslint: Required for running eslint-plugin-react")
 makedepends=("npm" "jq")
@@ -36,12 +36,14 @@ source=(
 noextract=("$_relname-$pkgver.tgz")
 # validpgpkeys=()
 sha512sums=('06de7a2cd1c0402a28bbcf2cf1588a463301dbedfa5d17a3090d55a0b8fbd7a288d4ca04f7d1e94d5bc84e1274aef1661b81381acabe5204e81239fe8f4e3806'
-            '405bebc308e44f4867b7e09755b1fe5f5ce56f29dcb76c2cfe88ede7dff9f286969c60040bc0c6a56a1ac3abd98d17eac222fb35159b81df21a9dc5052a7bfd1'
-            'd4bd5f9f4e2c95dd81d01961e05534f4107feea6ae73fd0dd396266331ccc4afb61c227bfe91b670910aaa348bf8888b49affa173b55786f8a2da03d9cd25b25'
-            '75eab7272197dcec2d875a235ff77a6fe6c1b73c4bdc2d029b1c5282a45d314c6736730f853a8211da7e7abeca7bf800d86fab7be48aed5db1eff3a2a6eb092d'
-            '6877ed96f7a1b6c7635511cbda6fa585b984001608f555662d4be5921c6d3751f73913a64033fedbc4c9e4c8c92dc2f397d13ee1a04dd8e91cc7e78c35f0fce5'
-            'f4bf53eb56716df3f1fcd3ae20746bb9fd61704ac6ebb2fc9a7b25485e057c9900fc802c95b58b7a480b1f57b6878233a6d48eef7596325bf0d9464cc7efd0c6'
-            '81ed5261563cbcbb0e5fc29186f32ef8c978a7570a69bdd8db19bec768091dc8536763ecd6d3c0d8289945105b9dfe5117c56349780e4f9915553aa4f0baf981')
+            'ab9dce5a05eb54ada45e585dc6c5775c26c501cc44b331c4707c58b45f5ddbe7d3c4981a1210ab4a4eb9b6c232638a7605ecec6220d4965463af89ebda152cf5'
+            'ad9b0286a676cc7100314030a0dca9da67c8d818bb0c8bfa0c8000155b39697c9fe3dab3b49b92d86a239504e78d36220bd718110f0eb257c1a268f78c98bca2'
+            'a6b370619ac4e5554d0a97eb65f1cecc44789670be5c13a8039297310d2235b8a841a66e7e579d14201f9630e9cb51098a311f0935fa919cab9224e2e8f29632'
+            'c274a47bed3ffe60dac3565bf7a0014e1f37d8b47e7098e221f16ac5ba9b590de9c8cbf2426d7412613020cc9b5a46d3f6bab243e7f9770baecdc691da092ee1'
+            '2e64bcad485abc2f8024a32b438a8ced3730f4ab41c7ad625b93b2e6343d2c1364583db17029fd2b62f8854d78304c95c6a6aaa8ea94c2df079ee75f2190c8fd'
+            '38c35c2c88a35a0c7f1b9db0dd444a8cd0ca0e32a00388f79a621d7eac8ce1425ea3dc760c7195d81c5e3b891b4440fe908e2b7f0b90714733c796c0eea5d0e5')
+
+# prepare() {}
 
 package() {
   # Ensure cache is set when install is run in order to avoid littering user's home directory
