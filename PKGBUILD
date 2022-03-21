@@ -15,7 +15,7 @@
 _relname="eslint-plugin-react"
 
 # pkgbase=
-pkgname="nodejs-${_relname}"
+pkgname="${_relname}"
 pkgver=7.29.4
 pkgrel=1
 #epoch=
