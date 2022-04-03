@@ -5,9 +5,10 @@
 # repository root directory, see https://github.com/koalaman/shellcheck/wiki
 # and https://archiv8.github.io for further information.
 # shellcheck disable=SC2034,SC2154
-# ToDo: Add files: User documentation
-# ToDo: Add files: Tooling
-# FixMe: Namcap warnings and errors
+# [ToDo]: Add files: User documentation
+# [ToDo]: Add files: Tooling
+# [ToDo]: Fix file conflicts. E.g. eslint-plugin-react: /usr/lib/node_modules/root/tests/test-urls.js exists in filesystem (owned by add-gitignore)
+# [FixMe]: Namcap warnings and errors
 
 # Maintainer: Ross Clark <archiv8@artisteducator.com>
 # Contributor: Ross Clark <archiv8@artisteducator.com>
@@ -17,7 +18,7 @@ _relname="eslint-plugin-react"
 # pkgbase=
 pkgname="${_relname}"
 pkgver=7.29.4
-pkgrel=1
+pkgrel=2
 #epoch=
 pkgdesc="Specific ESLint rules for React"
 arch=("any")
@@ -25,12 +26,12 @@ url="https://eslint.org"
 license=("MIT")
 # groups=()
 depends=("nodejs")
-optdepends=("nodejs-eslint: Required for running eslint-plugin-react")
+optdepends=("eslint: Required for running eslint-plugin-react")
 makedepends=("npm" "jq")
 # checkdepends=()
-# provides=()
-# conflicts=()
-# replaces=()
+provides=("nodejs-eslint-plugin-react")
+conflicts=("nodejs-eslint-plugin-react")
+replaces=("nodejs-eslint-plugin-react")
 # backup=()
 # options=()
 # install=
@@ -81,12 +82,14 @@ jq '.|=with_entries(select(.key|test("_.+")|not))' "$pkgjson" > "$tmppackage"
 mv "$tmppackage" "$pkgjson"
 chmod 644 "$pkgjson"
 
+rm -rf "$pkgdir/usr/lib/node_modules/root"
+
 # Install license
-install -dm755 "${pkgdir}/usr/share/licenses/${pkgname}"
-ln -s ../../../lib/node_modules/eslint/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+# install -dm755 "${pkgdir}/usr/share/licenses/${pkgname}"
+# ln -s ../../../lib/node_modules/eslint/LICENSE "${pkgdir}/usr/share/# licenses/${pkgname}/LICENSE"
 
 # Create Archiv8 documentation folder
-install -dvm 755 "$pkgdir/usr/share/doc/$pkgname/packaging/"
+# install -dvm 755 "$pkgdir/usr/share/doc/$pkgname/packaging/"
 
 # Install Archiv8 Documentation
 # install -Dm 644 "CC-by-SA-v4.md" "$pkgdir/usr/share/licenses/$pkgname/packaging/CC-by-SA-v4.md"
