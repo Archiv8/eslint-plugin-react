@@ -17,8 +17,8 @@ _relname="eslint-plugin-react"
 
 # pkgbase=
 pkgname="${_relname}"
-pkgver=7.29.4
-pkgrel=2
+pkgver=7.31.1
+pkgrel=1
 #epoch=
 pkgdesc="Specific ESLint rules for React"
 arch=("any")
@@ -48,7 +48,7 @@ source=(
 noextract=("$_relname-$pkgver.tgz")
 # validpgpkeys=()
 sha512sums=(
-  "0950976a3962561e74f4f719611172bbf068504cf8e76fa3b5026ad9bdc169ee2fdf105458f2c29ad98133e6629c6e0ccf09b1260276339accaa1a8b567eccb5"
+  "8f8ff6c56aadfd1ec06731bc09a9061c0e976bfbbb891f10df10b163e014821753f766e720338111e7d5e39e8e787d10bc172ba157347b2bebacb4b24066087e"
 )
 
 # prepare() {}

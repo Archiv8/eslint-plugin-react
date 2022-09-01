@@ -1,0 +1,19 @@
+pkgbase = eslint-plugin-react
+	pkgdesc = Specific ESLint rules for React
+	pkgver = 7.31.1
+	pkgrel = 1
+	url = https://eslint.org
+	arch = any
+	license = MIT
+	makedepends = npm
+	makedepends = jq
+	depends = nodejs
+	optdepends = eslint: Required for running eslint-plugin-react
+	provides = nodejs-eslint-plugin-react
+	conflicts = nodejs-eslint-plugin-react
+	replaces = nodejs-eslint-plugin-react
+	noextract = eslint-plugin-react-7.31.1.tgz
+	source = https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.31.1.tgz
+	sha512sums = 8f8ff6c56aadfd1ec06731bc09a9061c0e976bfbbb891f10df10b163e014821753f766e720338111e7d5e39e8e787d10bc172ba157347b2bebacb4b24066087e
+
+pkgname = eslint-plugin-react
